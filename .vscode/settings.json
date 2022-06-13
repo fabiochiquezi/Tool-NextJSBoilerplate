@@ -18,6 +18,11 @@
         "yarn-error.log": true,
         ".babelrc": true,
         "out": true,
+        "coverage": true,
+        "jest.config.js": true,
+        "tsconfig.jest.json": true,
+        "package.json": true,
+        "playwright.config.ts": true,
 
         //Kanban
         ".kanbn/index.md": true,
@@ -25,7 +30,8 @@
         ".kanbn/tasks/": true,
 
         //Code
-        "pages/_document.js": true
+        "src/pages/_document.js": true,
+        "src/jest.setup.ts": true,
     },
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"

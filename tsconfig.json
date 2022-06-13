@@ -23,6 +23,13 @@
     "noImplicitThis": true,
     "noImplicitReturns": true,
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.js"],
+  "include": [
+      "next-env.d.ts",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/app/pages/_document.js",
+      "helpers/**/*.ts",
+      "helpers/**/*.tsx"
+  ],
   "exclude": ["node_modules"]
 }

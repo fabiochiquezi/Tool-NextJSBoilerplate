@@ -9,7 +9,44 @@
         },
         {
             "title": "To-Do",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "Redux",
+                    "id": "cl4czh18f000a3p5xvva7jof1"
+                },
+                {
+                    "text": "Add Firebase",
+                    "id": "cl4cxcxcj000k3p5x8pou6ws7"
+                },
+                {
+                    "text": "Configure css global / reset",
+                    "id": "cl4cxc2p3000j3p5xwuyfy6nu"
+                },
+                {
+                    "text": "Add GitHub Actions",
+                    "id": "cl4cxbww6000i3p5xsl8umouc"
+                },
+                {
+                    "text": "Add commitzen",
+                    "id": "cl4cxbsce000h3p5xg33hmt9u"
+                },
+                {
+                    "text": "Add husky",
+                    "id": "cl4cxbne3000g3p5x7uwux0yb"
+                },
+                {
+                    "text": "Add some component library",
+                    "id": "cl4cxay4i000c3p5xo6y80wro"
+                },
+                {
+                    "text": "Add tailwind",
+                    "id": "cl4cxar72000b3p5xvnit0s34"
+                },
+                {
+                    "text": "Add redux",
+                    "id": "cl4cxango000a3p5xbj7j4d7g"
+                }
+            ],
             "id": "cl45n99ny000c3p5xcpm6j95w",
             "color": "#fcb900"
         },
@@ -21,12 +58,25 @@
         },
         {
             "title": "Done",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "Test --- Add Jest",
+                    "id": "cl4d9iad8000b3p5x0fobam5c"
+                },
+                {
+                    "text": "Test --- Add PlayWright",
+                    "id": "cl4d9hr5d000a3p5x3b1xos1m"
+                },
+                {
+                    "text": "Test --- Add React Testing Library\n",
+                    "id": "cl4cxb70i000e3p5xkd5abj9o"
+                }
+            ],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655131710932
+    "timestamp": 1655156624756
 }
