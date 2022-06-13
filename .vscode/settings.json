@@ -1,0 +1,30 @@
+{
+    "editor.formatOnSave": true,
+    "git.enabled": false,
+    "files.exclude": {
+        ".vscode": true,
+        ".gitignore": true,
+        "README.md": true,
+        "tsconfig.json": true,
+        "yarn.lock": true,
+        ".editorconfig": true,
+        ".eslintignore": true,
+        ".eslintrc.json": true,
+        ".prettierignore": true,
+        ".prettierrc": true,
+        "next-env.d.ts": true,
+        "next.config.js": true,
+        ".next": true,
+        "yarn-error.log": true,
+        ".babelrc": true,
+
+        //Code
+        "pages/_document.js": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.excludeLanguages": [
+      "markdown"
+    ]
+  }
