@@ -1,0 +1,32 @@
+{
+    "title": "Tool-NextJSBoilerplate",
+    "cols": [
+        {
+            "title": "BackLog",
+            "tasks": [],
+            "id": "cl45n99ny000a3p5xm00x9rz5",
+            "color": "#eb144c"
+        },
+        {
+            "title": "To-Do",
+            "tasks": [],
+            "id": "cl45n99ny000c3p5xcpm6j95w",
+            "color": "#fcb900"
+        },
+        {
+            "title": "Doing",
+            "tasks": [],
+            "id": "cl45n99ny000d3p5x9vknoik1",
+            "color": "#0693e3"
+        },
+        {
+            "title": "Done",
+            "tasks": [],
+            "id": "cl45n99ny000e3p5xnkmzzmjq",
+            "color": "#00d084"
+        }
+    ],
+    "autosave": true,
+    "saveToFile": true,
+    "timestamp": 1655131710932
+}

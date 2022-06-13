@@ -18,6 +18,11 @@
         "yarn-error.log": true,
         ".babelrc": true,
 
+        //Kanban
+        ".kanbn/index.md": true,
+        ".kanbn/how-to-use.txt": true,
+        ".kanbn/tasks/": true,
+
         //Code
         "pages/_document.js": true
     },
