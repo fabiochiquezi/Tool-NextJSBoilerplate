@@ -17,6 +17,7 @@
         ".next": true,
         "yarn-error.log": true,
         ".babelrc": true,
+        "out": true,
 
         //Kanban
         ".kanbn/index.md": true,

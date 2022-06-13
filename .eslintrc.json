@@ -40,6 +40,7 @@
         //"no-unused-vars": ["warn", { "argsIgnorePattern": "_" }],
 
         //* Enhance Readability
+        "space-before-function-paren": "off",
         "no-mixed-spaces-and-tabs": "warn",
         "space-before-blocks": "error",
         "space-in-parens": "error",
