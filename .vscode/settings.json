@@ -23,6 +23,9 @@
         "tsconfig.jest.json": true,
         "package.json": true,
         "playwright.config.ts": true,
+        "commitlint.config.js": true,
+        ".husky": true,
+        ".kanbn": true
 
         //Kanban
         ".kanbn/index.md": true,

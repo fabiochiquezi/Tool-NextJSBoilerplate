@@ -37,7 +37,7 @@
         "no-useless-concat": "error",
         "no-useless-return": "error",
         "no-constant-condition": "warn",
-        //"no-unused-vars": ["warn", { "argsIgnorePattern": "_" }],
+        "no-unused-vars": "off",
 
         //* Enhance Readability
         "space-before-function-paren": "off",

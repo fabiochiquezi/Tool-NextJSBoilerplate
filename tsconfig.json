@@ -31,5 +31,5 @@
       "helpers/**/*.ts",
       "helpers/**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "helpers/tests/*"]
 }
