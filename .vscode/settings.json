@@ -1,9 +1,6 @@
 {
-    "editor.formatOnSave": true,
-    "git.enabled": false,
     "files.exclude": {
         ".vscode": true,
-        ".gitignore": true,
         "README.md": true,
         "tsconfig.json": true,
         "yarn.lock": true,
@@ -25,21 +22,15 @@
         "playwright.config.ts": true,
         "commitlint.config.js": true,
         ".husky": true,
-        ".kanbn": true
-
-        //Kanban
-        ".kanbn/index.md": true,
-        ".kanbn/how-to-use.txt": true,
-        ".kanbn/tasks/": true,
+        ".kanbn": true,
+        ".nvmrc": true,
+        "postcss.config.js": true,
+        "tailwind.config.js": true,
+        ".gitignore": true,
 
         //Code
         "src/pages/_document.js": true,
         "src/jest.setup.ts": true,
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.excludeLanguages": [
-      "markdown"
-    ]
+        "src/globalStyle.css": true
+    }
   }

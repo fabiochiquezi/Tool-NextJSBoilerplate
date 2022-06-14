@@ -17,6 +17,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
+                <p className='font-serif text-6xl'>Teste</p>
                 <SimpleTodoAdd />
             </main>
         </div>

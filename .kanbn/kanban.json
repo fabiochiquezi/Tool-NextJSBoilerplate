@@ -28,10 +28,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "Add Helpers",
-                    "id": "cl4db06bc000c3p5xwfichfn1"
-                },
-                {
                     "text": "Add Firebase\nCreate a login in firebase\nCreate a store user in firebase\nApp checking\nHosting\nStorage",
                     "id": "cl4cxcxcj000k3p5x8pou6ws7"
                 },
@@ -61,10 +57,6 @@
                 {
                     "text": "Configure css global / reset",
                     "id": "cl4cxc2p3000j3p5xwuyfy6nu"
-                },
-                {
-                    "text": "Add some component library",
-                    "id": "cl4cxay4i000c3p5xo6y80wro"
                 },
                 {
                     "text": "Add Tailwind",
@@ -100,6 +92,14 @@
                 {
                     "text": "Config --- Add husky",
                     "id": "cl4cxbne3000g3p5x7uwux0yb"
+                },
+                {
+                    "text": "Add Helpers",
+                    "id": "cl4db06bc000c3p5xwfichfn1"
+                },
+                {
+                    "text": "Add some component library",
+                    "id": "cl4cxay4i000c3p5xo6y80wro"
                 }
             ],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
@@ -108,5 +108,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655173884805
+    "timestamp": 1655208586432
 }
