@@ -9,10 +9,6 @@
                     "id": "cl4djq91h000d3p5xeqyx6sb2"
                 },
                 {
-                    "text": "Libraries --- Material UI",
-                    "id": "cl4djq14r000c3p5xnjonawm9"
-                },
-                {
                     "text": "Libraries --- Formik",
                     "id": "cl4djpwy8000b3p5x8idmoz3h"
                 },
@@ -55,12 +51,8 @@
                     "id": "cl4dblhnf000a3p5xnqp2qs5b"
                 },
                 {
-                    "text": "Configure css global / reset",
-                    "id": "cl4cxc2p3000j3p5xwuyfy6nu"
-                },
-                {
-                    "text": "Add Tailwind",
-                    "id": "cl4cxar72000b3p5xvnit0s34"
+                    "text": "Libraries --- Material UI",
+                    "id": "cl4djq14r000c3p5xnjonawm9"
                 }
             ],
             "id": "cl45n99ny000d3p5x9vknoik1",
@@ -100,6 +92,14 @@
                 {
                     "text": "Add some component library",
                     "id": "cl4cxay4i000c3p5xo6y80wro"
+                },
+                {
+                    "text": "Add Tailwind",
+                    "id": "cl4cxar72000b3p5xvnit0s34"
+                },
+                {
+                    "text": "Configure css global / reset",
+                    "id": "cl4cxc2p3000j3p5xwuyfy6nu"
                 }
             ],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
@@ -108,5 +108,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655208586432
+    "timestamp": 1655216265155
 }

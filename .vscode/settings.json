@@ -1,5 +1,7 @@
 {
     "files.exclude": {
+        ".*": true,
+        ".gitignore": true,
         ".vscode": true,
         "README.md": true,
         "tsconfig.json": true,
@@ -26,11 +28,10 @@
         ".nvmrc": true,
         "postcss.config.js": true,
         "tailwind.config.js": true,
-        ".gitignore": true,
 
         //Code
         "src/pages/_document.js": true,
         "src/jest.setup.ts": true,
         "src/globalStyle.css": true
     }
-  }
+}
