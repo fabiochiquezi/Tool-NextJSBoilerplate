@@ -5,8 +5,8 @@
             "title": "BackLog",
             "tasks": [
                 {
-                    "text": "Libraries --- AntDesign",
-                    "id": "cl4djq91h000d3p5xeqyx6sb2"
+                    "text": "Libraries --- Motion",
+                    "id": "cl4eh5bmh000a3p5x3a6ryqx5"
                 },
                 {
                     "text": "Libraries --- Formik",
@@ -39,20 +39,20 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "text": "Make the UX",
+                    "text": "Sort the layers in the design",
+                    "id": "cl4eu216b000a3p5xoxtk2uhy"
+                },
+                {
+                    "text": "Design --- Make the UX",
                     "id": "cl4djsjwj000f3p5xmwfs4699"
                 },
                 {
-                    "text": "Make the Design",
+                    "text": "Design --- Make the UI: SimpleTodo\n\n- list all todo\n- open one todo\n- create todo\n- remove todo\n- update todo",
                     "id": "cl4djsebb000e3p5x379alaem"
                 },
                 {
-                    "text": "Initialize ToDo Route",
+                    "text": "Dev --- Initialize ToDo Route",
                     "id": "cl4dblhnf000a3p5xnqp2qs5b"
-                },
-                {
-                    "text": "Libraries --- Material UI",
-                    "id": "cl4djq14r000c3p5xnjonawm9"
                 }
             ],
             "id": "cl45n99ny000d3p5x9vknoik1",
@@ -100,6 +100,10 @@
                 {
                     "text": "Configure css global / reset",
                     "id": "cl4cxc2p3000j3p5xwuyfy6nu"
+                },
+                {
+                    "text": "Libraries --- Material UI",
+                    "id": "cl4djq14r000c3p5xnjonawm9"
                 }
             ],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
@@ -108,5 +112,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655216265155
+    "timestamp": 1655251604455
 }

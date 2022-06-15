@@ -1,11 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
-import SignIn from '../app/SignIn'
 import type { NextPage } from 'next'
+import SimpleTodoAdd from '../../app/SimpeToDo/add'
 
 const Home: NextPage = () => {
-    const title = 'Boilerplate | SignIn'
-    const description = 'My SignIn'
+    const title = 'Boilerplate | Home'
+    const description = 'My boilerplate description'
 
     return (
         <div>
@@ -16,7 +16,8 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <SignIn />
+                <p className='font-serif text-6xl'>Teste</p>
+                <SimpleTodoAdd />
             </main>
         </div>
     )
