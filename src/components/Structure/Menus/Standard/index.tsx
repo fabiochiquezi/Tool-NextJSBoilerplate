@@ -11,7 +11,7 @@ const StandardMenu: React.FC = () => {
     const liActive = `${normalClass} text-blue-400 font-bold hover:text-blue-300`
     const li = `${normalClass} hover:text-gray-300`
     const isActive = (uri: string) => (route === uri ? liActive : li)
-    console.log(route)
+
     return (
         <ul className="flex justify-center">
             <li>

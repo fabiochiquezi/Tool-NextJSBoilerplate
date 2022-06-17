@@ -5,12 +5,12 @@
             "title": "BackLog",
             "tasks": [
                 {
-                    "text": "Libraries --- Motion",
-                    "id": "cl4eh5bmh000a3p5x3a6ryqx5"
+                    "text": "Libraries --- React Motion",
+                    "id": "cl4hp6q51000b3p5xc1v0ptwq"
                 },
                 {
-                    "text": "Libraries --- Formik",
-                    "id": "cl4djpwy8000b3p5x8idmoz3h"
+                    "text": "Libraries --- Motion",
+                    "id": "cl4eh5bmh000a3p5x3a6ryqx5"
                 }
             ],
             "id": "cl45n99ny000a3p5xm00x9rz5",
@@ -19,6 +19,14 @@
         {
             "title": "To-Do",
             "tasks": [
+                {
+                    "text": "React Testing Library",
+                    "id": "cl4ifl4st000b3p5x2g1pumki"
+                },
+                {
+                    "text": "React Query",
+                    "id": "cl4ifkl0a000a3p5xokylahi8"
+                },
                 {
                     "text": "Theme",
                     "id": "cl4g2bfg3000a3p5xcw20mehq"
@@ -59,5 +67,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655325940535
+    "timestamp": 1655469165863
 }

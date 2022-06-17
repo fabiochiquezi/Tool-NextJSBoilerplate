@@ -5,13 +5,13 @@ import React from 'react'
 
 const StandardHeader: React.FC = () => {
     return (
-        <header className='mx-4 flex justify-between items-center'>
-            <Link href="/" className='logo'>
+        <header className="mx-4 flex justify-between items-center">
+            <Link href="/" className="logo">
                 <a>
-                    <Image src="/logo.png" width={58} height={58} />
+                    <Image src="/logo.png" width={90} height={90} />
                 </a>
             </Link>
-            <ButtonSignOut />
+            <ButtonSignOut className="mb-2" />
         </header>
     )
 }
