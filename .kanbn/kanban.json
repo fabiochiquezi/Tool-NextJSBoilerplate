@@ -11,10 +11,6 @@
                 {
                     "text": "Libraries --- Formik",
                     "id": "cl4djpwy8000b3p5x8idmoz3h"
-                },
-                {
-                    "text": "Libraries --- NextAuth",
-                    "id": "cl4djpp4x000a3p5xavskx9pq"
                 }
             ],
             "id": "cl45n99ny000a3p5xm00x9rz5",
@@ -24,12 +20,16 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "Add Firebase\nCreate a login in firebase\nCreate a store user in firebase\nApp checking\nHosting\nStorage",
-                    "id": "cl4cxcxcj000k3p5x8pou6ws7"
+                    "text": "Theme",
+                    "id": "cl4g2bfg3000a3p5xcw20mehq"
                 },
                 {
-                    "text": "Add redux",
-                    "id": "cl4cxango000a3p5xbj7j4d7g"
+                    "text": "TS paths",
+                    "id": "cl4fk0vat000a3p5xqjugqckz"
+                },
+                {
+                    "text": "Add Firebase\nCreate a login in firebase\nCreate a store user in firebase\nApp checking\nHosting\nStorage",
+                    "id": "cl4cxcxcj000k3p5x8pou6ws7"
                 }
             ],
             "id": "cl45n99ny000c3p5xcpm6j95w",
@@ -39,20 +39,12 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "text": "Sort the layers in the design",
-                    "id": "cl4eu216b000a3p5xoxtk2uhy"
-                },
-                {
-                    "text": "Design --- Make the UX",
-                    "id": "cl4djsjwj000f3p5xmwfs4699"
-                },
-                {
-                    "text": "Design --- Make the UI: SimpleTodo\n\n- list all todo\n- open one todo\n- create todo\n- remove todo\n- update todo",
-                    "id": "cl4djsebb000e3p5x379alaem"
-                },
-                {
                     "text": "Dev --- Initialize ToDo Route",
                     "id": "cl4dblhnf000a3p5xnqp2qs5b"
+                },
+                {
+                    "text": "Add redux",
+                    "id": "cl4cxango000a3p5xbj7j4d7g"
                 }
             ],
             "id": "cl45n99ny000d3p5x9vknoik1",
@@ -60,57 +52,12 @@
         },
         {
             "title": "Done",
-            "tasks": [
-                {
-                    "text": "Config --- Add commitlint",
-                    "id": "cl4daso4c000b3p5x5yv7o78n"
-                },
-                {
-                    "text": "Test --- Add Jest",
-                    "id": "cl4d9iad8000b3p5x0fobam5c"
-                },
-                {
-                    "text": "Test --- Add PlayWright",
-                    "id": "cl4d9hr5d000a3p5x3b1xos1m"
-                },
-                {
-                    "text": "Test --- Add React Testing Library\n",
-                    "id": "cl4cxb70i000e3p5xkd5abj9o"
-                },
-                {
-                    "text": "Config --- Add commitzen",
-                    "id": "cl4cxbsce000h3p5xg33hmt9u"
-                },
-                {
-                    "text": "Config --- Add husky",
-                    "id": "cl4cxbne3000g3p5x7uwux0yb"
-                },
-                {
-                    "text": "Add Helpers",
-                    "id": "cl4db06bc000c3p5xwfichfn1"
-                },
-                {
-                    "text": "Add some component library",
-                    "id": "cl4cxay4i000c3p5xo6y80wro"
-                },
-                {
-                    "text": "Add Tailwind",
-                    "id": "cl4cxar72000b3p5xvnit0s34"
-                },
-                {
-                    "text": "Configure css global / reset",
-                    "id": "cl4cxc2p3000j3p5xwuyfy6nu"
-                },
-                {
-                    "text": "Libraries --- Material UI",
-                    "id": "cl4djq14r000c3p5xnjonawm9"
-                }
-            ],
+            "tasks": [],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655251604455
+    "timestamp": 1655325940535
 }

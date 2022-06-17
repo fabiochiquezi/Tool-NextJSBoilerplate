@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import SimpleTodoList from '../../app/SimpeToDo/list'
+import SimpleTodoAdd from '../../app/SimpeToDo/add'
 import StandarStructure from '../../components/Structure/Standard'
 
 const SimpleToDoAddPage: NextPage = () => {
-    const title = 'Boilerplate | SimpleToDo List'
-    const description = 'Description'
+    const title = 'Boilerplate | Home'
+    const description = 'My boilerplate description'
 
     return (
         <div>
@@ -17,7 +17,7 @@ const SimpleToDoAddPage: NextPage = () => {
             </Head>
 
             <StandarStructure>
-                <SimpleTodoList />
+                <SimpleTodoAdd />
             </StandarStructure>
         </div>
     )

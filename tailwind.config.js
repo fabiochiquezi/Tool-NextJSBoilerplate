@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -10,7 +12,8 @@ module.exports = {
         '2xl': '1536px'
         },
         colors: {
-          // blue: '#1fb6ff',
+          blue: colors.blue,
+          gray: colors.gray
         },
         fontFamily: {
           // sans: ['Graphik', 'sans-serif'],
