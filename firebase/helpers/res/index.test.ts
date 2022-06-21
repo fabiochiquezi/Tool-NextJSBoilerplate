@@ -1,9 +1,9 @@
-import { resFirebaseFn } from './index'
+import { resp } from './index'
 
 describe('helpers/response/resFirebase', () => {
     describe('if success', () => {
         it('return success data', () => {
-            const res = resFirebaseFn(true, 200, 'success', { data: 'data' })
+            const res = resp(true, 200, 'success', { data: 'data' })
             expect(res).toEqual({
                 ok: true,
                 status: 200,
@@ -15,7 +15,7 @@ describe('helpers/response/resFirebase', () => {
 
     describe('if error', () => {
         it('return errors data', () => {
-            const res = resFirebaseFn(false, 400, 'error', { data: 'data' })
+            const res = resp(false, 400, 'error', { data: 'data' })
             expect(res).toEqual({
                 ok: false,
                 status: 400,

@@ -12,7 +12,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"yarn firebaseEmulators\" \"next dev\"",
+    "nextDev": "next dev",
     "start": "next start",
     "build": "next build",
     "export": "rimraf out && next build && next export",
@@ -20,7 +21,8 @@
     "test:unit": "jest --runInBand",
     "test:unit:watch": "jest --runInBand --watch",
     "test:unit:coverage": "jest --coverage --runInBand",
-    "test:e2e": ""
+    "test:e2e": "",
+    "firebaseEmulators": "firebase emulators:start"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

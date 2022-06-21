@@ -1,24 +1,13 @@
-import React, { createContext, ReactNode, useContext, useState } from 'react'
 import SnackBarStandard from './SnackBars/Standard'
+import React, { useState, ReactNode } from 'react'
+import { snackBarT, context } from './config'
 
-type types = {
-    snackBar: {
-        snackBar: boolean
-        setSnackBar: React.Dispatch<React.SetStateAction<boolean>>
-    }
-}
-const defaultData: types = {
-    snackBar: {
-        snackBar: false,
-        setSnackBar: () => null
-    }
-}
-const context = createContext<types>(defaultData)
-export const useComponents = () => useContext(context)
-
-type Props = { children: ReactNode }
-export function ComponentsProvider({ children }: Props) {
-    const [snackBar, setSnackBar] = useState(false)
+const ComponentsProvider = ({ children }: { children: ReactNode }) => {
+    const [snackBar, setSnackBar] = useState<snackBarT>({
+        open: false,
+        message: '',
+        severity: 'error'
+    })
 
     const value = {
         snackBar: { snackBar, setSnackBar }
@@ -28,7 +17,9 @@ export function ComponentsProvider({ children }: Props) {
         <>
             <context.Provider value={value}>
                 <SnackBarStandard
-                    snackBar={snackBar}
+                    open={snackBar.open}
+                    message={snackBar.message}
+                    severity={snackBar.severity}
                     setSnackBar={setSnackBar}
                 />
                 {children}
@@ -36,3 +27,5 @@ export function ComponentsProvider({ children }: Props) {
         </>
     )
 }
+
+export { ComponentsProvider }

@@ -41,6 +41,6 @@
         //"src/": true,
         "uiux/": true,
         "public/": true,
-        "__E2E__": true,
+        "__E2E__": true
     }
 }

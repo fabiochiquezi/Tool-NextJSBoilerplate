@@ -13,6 +13,6 @@ export default yup.object({
         .string()
         .required('Password is required')
         // .password()
-        .min(8, 'Must be at least 8 characters')
+        .min(6, 'Must be at least 6 characters')
         .matches(/^(\S+$)/g, '* This field cannot contain only blankspaces')
 })

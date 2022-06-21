@@ -5,6 +5,26 @@
             "title": "BackLog",
             "tasks": [
                 {
+                    "text": "React Native Tool",
+                    "id": "cl4nn0p0a000k3p5xz2ryi5n2"
+                },
+                {
+                    "text": "PWA Tool",
+                    "id": "cl4nmwubw000j3p5xt04bx7hn"
+                },
+                {
+                    "text": "UI Dashboard Project",
+                    "id": "cl4nmw7hg000i3p5xfkjnw9w6"
+                },
+                {
+                    "text": "Dashboard Project",
+                    "id": "cl4nmvzsc000h3p5xh6hi0ztt"
+                },
+                {
+                    "text": "Monorepo Tool",
+                    "id": "cl4nmvklh000g3p5xj1cqjeim"
+                },
+                {
                     "text": "Libraries --- Motion",
                     "id": "cl4eh5bmh000a3p5x3a6ryqx5"
                 }
@@ -16,31 +36,19 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "create a csr project w/ react",
-                    "id": "cl4ljew4y000c3p5x6nsua3rx"
+                    "text": "App shoudn't have be attached to any library as MUI. Everything there should come from injetion dependecie.",
+                    "id": "cl4ofm2o8000a3p5xlavocvvi"
                 },
                 {
-                    "text": "If reactquery isn't enough, use zendust or recoil",
-                    "id": "cl4ljef18000b3p5x0lojcxyr"
+                    "text": "Implement Theme w/ Tailwind or Styled Components",
+                    "id": "cl4nmspl6000f3p5x0nldu298"
                 },
                 {
-                    "text": "The list should be the root path (/) and must get the data from server. But to add or remove, it should have sign In before. In the process of sign in, maybe I should get the data w/ fetch and store it.",
-                    "id": "cl4ljcl26000a3p5x3qkqequ6"
-                },
-                {
-                    "text": "React Testing Library",
-                    "id": "cl4ifl4st000b3p5x2g1pumki"
-                },
-                {
-                    "text": "Theme",
-                    "id": "cl4g2bfg3000a3p5xcw20mehq"
-                },
-                {
-                    "text": "TS paths",
+                    "text": "Implement TS Paths in configuration",
                     "id": "cl4fk0vat000a3p5xqjugqckz"
                 },
                 {
-                    "text": "Add Firebase\nCreate a login in firebase\nCreate a store user in firebase\nApp checking\nHosting\nStorage",
+                    "text": "Create the User service in the Back-End\n- Cancel signUp if error in back-end",
                     "id": "cl4cxcxcj000k3p5x8pou6ws7"
                 }
             ],
@@ -51,12 +59,24 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "text": "React Query",
-                    "id": "cl4ifkl0a000a3p5xokylahi8"
+                    "text": "Use ReactQuery or Zendust/Recoil to save the List of ToDo",
+                    "id": "cl4nmpyzx000e3p5xk6h98crk"
                 },
                 {
-                    "text": "Dev --- Initialize ToDo Route",
-                    "id": "cl4dblhnf000a3p5xnqp2qs5b"
+                    "text": "Turn List ToDo  in public route",
+                    "id": "cl4nmow8g000d3p5xoggedn9t"
+                },
+                {
+                    "text": "Injection dependencie in App/Components",
+                    "id": "cl4nmo9qb000c3p5xvaa7i5mi"
+                },
+                {
+                    "text": "Middleware private routes",
+                    "id": "cl4nmo2kk000b3p5xyw3mggll"
+                },
+                {
+                    "text": "Firebase\n- [ v ] signUp: errors and success\n- signIn: errors and success\n- signOut\n- Current user",
+                    "id": "cl4nmn07j000a3p5xqvubndcc"
                 }
             ],
             "id": "cl45n99ny000d3p5x9vknoik1",
@@ -71,5 +91,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655734905274
+    "timestamp": 1655832028099
 }

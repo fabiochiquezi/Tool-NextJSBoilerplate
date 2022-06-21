@@ -1,4 +1,5 @@
-import { Snackbar, SnackbarOrigin } from '@mui/material'
+import { Alert, AlertColor, Snackbar, SnackbarOrigin } from '@mui/material'
+import { snackBarT } from '../config'
 import React from 'react'
 
 export interface State extends SnackbarOrigin {
@@ -6,26 +7,47 @@ export interface State extends SnackbarOrigin {
 }
 
 type props = {
-    snackBar: boolean
-    setSnackBar: React.Dispatch<React.SetStateAction<boolean>>
+    open: boolean
+    message?: string
+    severity: AlertColor | undefined
+    autoHide?: number
+    setSnackBar: React.Dispatch<React.SetStateAction<snackBarT>>
 }
 
-const SnackBarStandard: React.FC<props> = ({ snackBar, setSnackBar }) => {
+const SnackBarStandard: React.FC<props> = ({
+    open,
+    message = '',
+    severity,
+    autoHide = 6000,
+    setSnackBar
+}) => {
     const vertical = 'top'
     const horizontal = 'center'
 
     function handleClose() {
-        setSnackBar(false)
+        setSnackBar({
+            open,
+            message,
+            severity
+        })
     }
 
     return (
         <Snackbar
             anchorOrigin={{ vertical, horizontal }}
-            open={snackBar}
+            open={open}
             onClose={handleClose}
-            message="I love snacks"
             key={vertical + horizontal}
-        />
+            autoHideDuration={autoHide}
+        >
+            <Alert
+                onClose={handleClose}
+                severity={severity}
+                sx={{ width: '100%' }}
+            >
+                {message}
+            </Alert>
+        </Snackbar>
     )
 }
 export default SnackBarStandard

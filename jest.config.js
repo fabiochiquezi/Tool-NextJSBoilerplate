@@ -7,7 +7,7 @@ module.exports = {
           tsconfig: './tsconfig.jest.json'
       }
   },
-  setupFilesAfterEnv: ['./src/jest.setup.ts'],
+  setupFilesAfterEnv: ['./jest.setup.ts'],
   testMatch: ['**/**/*.test.ts', '**/**/*.test.tsx'],
   testPathIgnorePatterns: ['/node_modules/', '__E2E__'],
   verbose: false

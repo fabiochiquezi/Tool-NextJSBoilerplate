@@ -6,12 +6,13 @@ import Avatar from '@mui/material/Avatar'
 import { useForm } from 'react-hook-form'
 import Container from '@mui/material/Container'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { signUp } from '../../../firebase/login/signUp'
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
+import { signUp } from '../../../firebase/auth/signUp'
 import SubmitButton from '../../../components/Buttons/Submit'
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 export default function SignUp() {
-    const formFns = useForm({ resolver: yupResolver(schema) })
+    const validation = { resolver: yupResolver(schema) }
+    const formFns = useForm(validation)
     const [loading, setLoading] = React.useState(false)
 
     const onSubmit = async (data: any) => {
