@@ -18,8 +18,8 @@
     "export": "rimraf out && next build && next export",
     "lint": "next lint",
     "test:unit": "jest --runInBand",
-    "test:unit:watch": "NODE_ENV=test jest --runInBand --watch",
-    "test:unit:coverage": "NODE_ENV=test jest --coverage --runInBand",
+    "test:unit:watch": "jest --runInBand --watch",
+    "test:unit:coverage": "jest --coverage --runInBand",
     "test:e2e": ""
   },
   "dependencies": {
@@ -31,15 +31,20 @@
     "@mui/lab": "^5.0.0-alpha.86",
     "@mui/material": "^5.8.4",
     "@mui/styles": "^5.8.4",
+    "firebase": "^9.8.3",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-hook-form": "^7.32.1",
-    "yup": "^0.32.11"
+    "react-query": "^3.39.1",
+    "yup": "^0.32.11",
+    "yup-password": "^0.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@firebase/auth-types": "^0.11.0",
+    "@firebase/rules-unit-testing": "^2.0.2",
     "@playwright/test": "^1.22.2",
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",

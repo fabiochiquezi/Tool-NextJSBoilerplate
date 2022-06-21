@@ -28,10 +28,19 @@
         ".nvmrc": true,
         "postcss.config.js": true,
         "tailwind.config.js": true,
+        "firebase.json": true,
+        "firebase-debug.log": true,
+        "ui-debug.log": true,
+        "jest.setup.ts": true,
 
         //Code
         "src/pages/_document.js": true,
-        "src/jest.setup.ts": true,
-        "src/globalStyle.css": true
+        //"src/globalStyle.css": true,
+
+        // Mode firebase
+        //"src/": true,
+        "uiux/": true,
+        "public/": true,
+        "__E2E__": true,
     }
 }

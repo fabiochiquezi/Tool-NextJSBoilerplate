@@ -5,20 +5,21 @@ import React, { useState } from 'react'
 type props = {
     btnText: string
     loading: boolean
+    className?: string
 }
 
-const SubmitButton: React.FC<props> = ({ btnText, loading }) => {
+const SubmitButton: React.FC<props> = ({ btnText, loading, className }) => {
     return (
         <Button
             type="submit"
             variant="contained"
             size="small"
-            className="bg-blue-600 h-10 w-24"
+            className={`${className} bg-blue-600 h-10 w-28`}
             endIcon={!loading ? <SendIcon /> : ''}
             disabled={!!loading}
         >
             {!loading ? (
-                'Sign In'
+                btnText
             ) : (
                 <CircularProgress size={20} color="inherit" />
             )}

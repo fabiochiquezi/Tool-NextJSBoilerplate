@@ -25,11 +25,21 @@
   },
   "include": [
       "next-env.d.ts",
+      "src/pages/_document.js",
+
       "src/**/*.ts",
       "src/**/*.tsx",
-      "src/pages/_document.js",
+
+      "app/**/*.ts",
+      "app/**/*.tsx",
+
+      "components/**/*.ts",
+      "components/**/*.tsx",
+
       "helpers/**/*.ts",
-      "helpers/**/*.tsx"
+      "helpers/**/*.tsx",
+
+      "firebase/**/*.ts"
   ],
   "exclude": ["node_modules", "helpers/tests/*"]
 }

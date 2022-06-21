@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import SimpleTodoAdd from '../../app/SimpeToDo/add'
-import StandarStructure from '../../components/Structure/Standard'
+import SimpleTodoAdd from '../../../app/SimpeToDo/add'
+import StandarStructure from '../../../components/Structure/Standard'
 
 const SimpleToDoAddPage: NextPage = () => {
     const title = 'Boilerplate | Home'
