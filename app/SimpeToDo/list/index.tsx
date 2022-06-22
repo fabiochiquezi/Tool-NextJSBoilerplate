@@ -1,11 +1,7 @@
 import React from 'react'
-import { domain } from '../types'
+import { props } from './types'
 
-type props = {
-    list: domain[]
-}
-
-const SimpleTodoList: React.FC<props> = ({ list }) => {
+const SimpleTodoList: React.FC<props> = ({ list, Li }) => {
     const isEmpty = list.length === 0
 
     const Empty = () => (
@@ -15,15 +11,11 @@ const SimpleTodoList: React.FC<props> = ({ list }) => {
     )
 
     const List = () => (
-        <ul className="mt-24">
+        <ul className="mt-24 flex flex-wrap">
             {list.map(item => (
-                <li
-                    key={item._id}
-                    id={item._id}
-                    className="mt-8 text-center w-100"
-                >
+                <Li key={item._id as string} id={item._id as string}>
                     {item.content}
-                </li>
+                </Li>
             ))}
         </ul>
     )

@@ -1,13 +1,10 @@
 import { useComponents } from '../../../components/Context/config'
 import { goOut } from '../../../firebase/auth/signOut'
+import { ButtonSignOutT } from './types'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-type props = {
-    className?: string
-}
-
-const ButtonSignOut: React.FC<props> = ({ className = '' }) => {
+const ButtonSignOut: React.FC<ButtonSignOutT> = ({ className = '' }) => {
     const router = useRouter()
     const { snackBar } = useComponents()
 

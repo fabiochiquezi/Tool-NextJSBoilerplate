@@ -12,4 +12,8 @@ const getUserStandard = (auth: Auth) => async () =>
         })
     })
 
+const authStateStandard = (auth: Auth) => (fn: any) =>
+    onAuthStateChanged(auth, fn)
+
+export const authState = authStateStandard(auth)
 export const getUser = getUserStandard(auth)

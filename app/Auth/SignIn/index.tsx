@@ -5,15 +5,17 @@ import FormFields from './FormFields'
 import Grid from '@mui/material/Grid'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
-import Avatar from '@mui/material/Avatar'
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { signIn } from '../../../firebase/auth/signIn'
 import SubmitButton from '../../../components/Buttons/Submit'
 import { useComponents } from '../../../components/Context/config'
 
-export default function SignIn() {
+type props = {
+    Avatar: React.FC
+}
+
+export const SignIn: React.FC<props> = ({ Avatar }) => {
     const [loading, setLoading] = React.useState(false)
     const validation = { resolver: yupResolver(schema) }
     const formFns = useForm(validation)
@@ -49,10 +51,7 @@ export default function SignIn() {
             maxWidth="xs"
             className="mt-16 flex flex-col items-center"
         >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }} />
-            <Typography component="h1" variant="h5" className="mb-4">
-                Sign in
-            </Typography>
+            <Avatar />
 
             <form
                 onSubmit={formFns.handleSubmit(onSubmit)}
@@ -68,18 +67,10 @@ export default function SignIn() {
                     loading={loading}
                     className="mt-4 mb-8"
                 />
-                <Grid container>
-                    <Grid item xs>
-                        <Link href="#" variant="body2">
-                            Forgot password?
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link href="#" variant="body2">
-                            {'Dont have an account? Sign Up'}
-                        </Link>
-                    </Grid>
-                </Grid>
+
+                <Link href="#" variant="body2">
+                    {'Dont have an account? Sign Up'}
+                </Link>
             </form>
         </Container>
     )

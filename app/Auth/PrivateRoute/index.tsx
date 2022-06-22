@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
 import React, { ReactNode, useEffect, useState } from 'react'
-import { getUser } from '../../../firebase/auth/getUser'
+import { getUser } from '../../../firebase/auth/authState'
 
 const Div = styled.div`
     position: fixed;

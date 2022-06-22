@@ -1,14 +1,13 @@
 import { Button, CircularProgress } from '@mui/material'
 import SendIcon from '@mui/icons-material/Send'
-import React, { useState } from 'react'
+import { SubmitButtonT } from './types'
+import React from 'react'
 
-type props = {
-    btnText: string
-    loading: boolean
-    className?: string
-}
-
-const SubmitButton: React.FC<props> = ({ btnText, loading, className }) => {
+const SubmitButton: React.FC<SubmitButtonT> = ({
+    btnText,
+    loading,
+    className
+}) => {
     return (
         <Button
             type="submit"

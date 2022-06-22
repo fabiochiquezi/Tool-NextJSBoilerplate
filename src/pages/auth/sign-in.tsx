@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import SignIn from '../../../app/Auth/SignIn'
+import { SignIn } from '../../../app/Auth/SignIn'
+import AvatarDefault from '../../../components/Avatar/Default'
 
 const Home: NextPage = () => {
     const title = 'Boilerplate | SignIn'
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <SignIn />
+                <SignIn Avatar={AvatarDefault} />
             </main>
         </div>
     )

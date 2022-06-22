@@ -1,15 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import { resErrorStd } from '../../../helpers'
+import ButtonSignOut from '../../../app/Auth/SignOut'
 import SimpleTodoList from '../../../app/SimpeToDo/list'
+import PrivateRoute from '../../../app/Auth/PrivateRoute'
+import StandardTitle from '../../../components/Titles/Standard'
 import { errorMessages } from '../../../app/Shared/Messages/error'
 import StandarStructure from '../../../components/Structure/Standard'
+import StandardMenu from '../../../components/Structure/Menus/Standard'
 import type {
     NextPage,
     GetServerSideProps,
     InferGetServerSidePropsType as getType
 } from 'next'
-import PrivateRoute from '../../../app/Auth/PrivateRoute'
 
 const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
     const { ok, message } = data
@@ -28,11 +31,11 @@ const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
                 <link rel="icon" href="ico/favicon.ico" />
             </Head>
 
-            <PrivateRoute>
-                <StandarStructure>
-                    {ok ? <SimpleTodoList list={data.data} /> : <Error />}
-                </StandarStructure>
-            </PrivateRoute>
+            <StandarStructure ButtonSignOut={ButtonSignOut}>
+                <StandardTitle>My ToDo List</StandardTitle>
+                <StandardMenu />
+                {ok ? <SimpleTodoList list={data.data} /> : <Error />}
+            </StandarStructure>
         </div>
     )
 }

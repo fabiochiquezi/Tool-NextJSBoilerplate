@@ -15,8 +15,8 @@ const StandardMenu: React.FC = () => {
     return (
         <ul className="flex justify-center">
             <li>
-                <Link href="/simple-todo">
-                    <a className={isActive('simple-todo')}>List</a>
+                <Link href="/simple-todo/list">
+                    <a className={isActive('list')}>List</a>
                 </Link>
             </li>
 

@@ -59,6 +59,10 @@
             "title": "Doing",
             "tasks": [
                 {
+                    "text": "implementing separation of dependencies from the first route '/' and private routes",
+                    "id": "cl4q4lbx4000a3p5xr5hehoar"
+                },
+                {
                     "text": "Middleware private routes",
                     "id": "cl4nmo2kk000b3p5xyw3mggll"
                 },
@@ -92,5 +96,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655872013261
+    "timestamp": 1655934432581
 }

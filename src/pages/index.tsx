@@ -1,7 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import { resErrorStd } from './../../helpers'
+import ButtonSignOut from '../../app/Auth/SignOut'
 import SimpleTodoList from '../../app/SimpeToDo/list'
+import StandardTitle from '../../components/Titles/Standard'
 import { errorMessages } from '../../app/Shared/Messages/error'
 import StandarStructure from '../../components/Structure/Standard'
 import type {
@@ -9,6 +11,7 @@ import type {
     GetServerSideProps,
     InferGetServerSidePropsType as getType
 } from 'next'
+import { SimpleTodoLi } from '../../components/Lists/SimpleTodoLi'
 
 const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
     const { ok, message } = data
@@ -27,8 +30,14 @@ const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
                 <link rel="icon" href="ico/favicon.ico" />
             </Head>
 
-            <StandarStructure>
-                {ok ? <SimpleTodoList list={data.data} /> : <Error />}
+            <StandarStructure ButtonSignOut={ButtonSignOut}>
+                <StandardTitle>All Simple ToDo</StandardTitle>
+
+                {ok ? (
+                    <SimpleTodoList list={data.data} Li={SimpleTodoLi} />
+                ) : (
+                    <Error />
+                )}
             </StandarStructure>
         </div>
     )

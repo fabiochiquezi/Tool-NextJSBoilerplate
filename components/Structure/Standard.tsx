@@ -1,21 +1,13 @@
 import React from 'react'
-import StandardTitle from '../Titles/Standard'
 import StandardHeader from './Headers/Standard'
-import StandardMenu from './Menus/Standard'
 
-type props = { children: React.ReactNode}
+type props = { children: React.ReactNode; ButtonSignOut: React.FC }
 
-const StandarStructure: React.FC<props> = ({ children }) => {
-    return (
-        <div className='mt-1'>
-            <StandardHeader />
-            <div className='container mx-auto px-4 mt-16'>
-                <StandardTitle />
-                <StandardMenu />
-                {children}
-            </div>
-        </div>
-    )
-}
+const StandarStructure: React.FC<props> = ({ children, ButtonSignOut }) => (
+    <div className="mt-1">
+        <StandardHeader ButtonSignOut={ButtonSignOut} />
+        <div className="container mx-auto px-4 mt-16">{children}</div>
+    </div>
+)
 
 export default StandarStructure
