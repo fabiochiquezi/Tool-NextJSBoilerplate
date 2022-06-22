@@ -1,9 +1,7 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
 import { TextField } from '@mui/material'
-import Checkbox from '@mui/material/Checkbox'
 import { FieldValues, UseFormRegister } from 'react-hook-form'
-import FormControlLabel from '@mui/material/FormControlLabel'
 
 type props = {
     register: UseFormRegister<FieldValues>
@@ -33,6 +31,7 @@ const FormFields: React.FC<props> = ({ errors, register }) => {
                     variant="outlined"
                     fullWidth
                     margin="none"
+                    type="password"
                     {...register('password')}
                     defaultValue=""
                     helperText={errors.password && errors.password.message}

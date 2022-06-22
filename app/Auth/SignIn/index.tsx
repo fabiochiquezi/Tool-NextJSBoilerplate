@@ -22,9 +22,14 @@ export default function SignIn() {
 
     const onSubmit = async (dataForm: any) => {
         setLoading(true)
-        const { data, message, ok } = await signIn(dataForm)
+        const { message, ok } = await signIn(dataForm)
 
         if (ok) {
+            snackBar.setSnackBar({
+                open: true,
+                message,
+                severity: 'success'
+            })
             router.push('/simple-todo/list')
             return
         }

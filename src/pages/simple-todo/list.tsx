@@ -9,6 +9,7 @@ import type {
     GetServerSideProps,
     InferGetServerSidePropsType as getType
 } from 'next'
+import PrivateRoute from '../../../app/Auth/PrivateRoute'
 
 const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
     const { ok, message } = data
@@ -27,9 +28,11 @@ const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
                 <link rel="icon" href="ico/favicon.ico" />
             </Head>
 
-            <StandarStructure>
-                {ok ? <SimpleTodoList list={data.data} /> : <Error />}
-            </StandarStructure>
+            <PrivateRoute>
+                <StandarStructure>
+                    {ok ? <SimpleTodoList list={data.data} /> : <Error />}
+                </StandarStructure>
+            </PrivateRoute>
         </div>
     )
 }

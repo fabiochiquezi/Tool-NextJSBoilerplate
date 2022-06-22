@@ -59,24 +59,16 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "text": "Use ReactQuery or Zendust/Recoil to save the List of ToDo",
-                    "id": "cl4nmpyzx000e3p5xk6h98crk"
-                },
-                {
-                    "text": "Turn List ToDo  in public route",
-                    "id": "cl4nmow8g000d3p5xoggedn9t"
-                },
-                {
-                    "text": "Injection dependencie in App/Components",
-                    "id": "cl4nmo9qb000c3p5xvaa7i5mi"
-                },
-                {
                     "text": "Middleware private routes",
                     "id": "cl4nmo2kk000b3p5xyw3mggll"
                 },
                 {
-                    "text": "Firebase\n- [ v ] signUp: errors and success\n- signIn: errors and success\n- signOut\n- Current user",
-                    "id": "cl4nmn07j000a3p5xqvubndcc"
+                    "text": "Use ReactQuery or Zendust/Recoil to save the List of ToDo",
+                    "id": "cl4nmpyzx000e3p5xk6h98crk"
+                },
+                {
+                    "text": "Injection dependencie in App/Components",
+                    "id": "cl4nmo9qb000c3p5xvaa7i5mi"
                 }
             ],
             "id": "cl45n99ny000d3p5x9vknoik1",
@@ -84,12 +76,21 @@
         },
         {
             "title": "Done",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "Firebase\n- signUp: errors and success\n- signIn: errors and success\n- signOut\n",
+                    "id": "cl4nmn07j000a3p5xqvubndcc"
+                },
+                {
+                    "text": "Turn List ToDo  in public route",
+                    "id": "cl4nmow8g000d3p5xoggedn9t"
+                }
+            ],
             "id": "cl45n99ny000e3p5xnkmzzmjq",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655832028099
+    "timestamp": 1655872013261
 }
