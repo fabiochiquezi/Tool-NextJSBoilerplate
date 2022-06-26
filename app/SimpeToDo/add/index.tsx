@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import SubmitButton from '../../../components/Buttons/Submit'
 
-function SimpleTodoAdd() {
+const SimpleTodoAdd = () => {
     const formFns = useForm({ resolver: yupResolver(schema) })
     const [loading, setLoading] = useState(false)
 
@@ -38,4 +38,4 @@ function SimpleTodoAdd() {
     )
 }
 
-export default SimpleTodoAdd
+export { SimpleTodoAdd }

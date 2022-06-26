@@ -22,10 +22,18 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
+    "baseUrl": ".",
+    "paths": {
+        "app/*": ["app/*"],
+        "helpers/*": ["helpers/*"],
+        "firebase/*": ["firebase/*"],
+        "components/*": ["components/*"],
+        "src/*": ["src/*"]
+    },
   },
   "include": [
       "next-env.d.ts",
-      "src/pages/_document.js",
+      "src/pages/_document.page.js",
 
       "src/**/*.ts",
       "src/**/*.tsx",

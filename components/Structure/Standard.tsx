@@ -1,13 +1,13 @@
 import React from 'react'
-import StandardHeader from './Headers/Standard'
+import { Header } from './Headers/Default'
 
 type props = { children: React.ReactNode; ButtonSignOut: React.FC }
 
-const StandarStructure: React.FC<props> = ({ children, ButtonSignOut }) => (
+const Structure: React.FC<props> = ({ children, ButtonSignOut }) => (
     <div className="mt-1">
-        <StandardHeader ButtonSignOut={ButtonSignOut} />
+        <Header ButtonSignOut={ButtonSignOut} />
         <div className="container mx-auto px-4 mt-16">{children}</div>
     </div>
 )
 
-export default StandarStructure
+export { Structure }

@@ -1,9 +1,7 @@
-export type domain = {
+export type simpleToDoDomainT = {
     _id?: string
     content: string
     createdAt: Date
     updateAt: Date
     __v: number
 }
-
-export type listDomain = domain[]

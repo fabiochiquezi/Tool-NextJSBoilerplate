@@ -1,5 +1,5 @@
 import React from 'react'
-import { domain } from '../types'
+import { simpleToDoDomainT } from '../types'
 
 type Li = {
     className?: string
@@ -8,7 +8,7 @@ type Li = {
     children: React.ReactNode
 }
 
-export type props = {
-    list: domain[]
+export type SimpleTodoListT = {
+    list: simpleToDoDomainT[]
     Li: React.FC<Li>
 }

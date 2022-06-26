@@ -1,17 +1,9 @@
-import { AlertColor, Snackbar, SnackbarOrigin } from '@mui/material'
-import { snackBarT } from '../config'
-import React from 'react'
-import { Alert } from './Alert'
+import { FC, SyntheticEvent } from 'react'
+import { Snackbar } from '@mui/material'
+import { SnackBarT } from './types'
+import { Alert } from '../Alert'
 
-type props = {
-    open: boolean
-    message?: string
-    severity: AlertColor | undefined
-    autoHide?: number
-    setSnackBar: React.Dispatch<React.SetStateAction<snackBarT>>
-}
-
-const SnackBarStandard: React.FC<props> = ({
+const SnackBar: FC<SnackBarT> = ({
     open,
     message = '',
     severity,
@@ -21,16 +13,10 @@ const SnackBarStandard: React.FC<props> = ({
     const vertical = 'top'
     const horizontal = 'center'
 
-    const handleClose = (
-        _event?: React.SyntheticEvent | Event,
-        reason?: string
-    ) => {
+    const handleClose = (_event?: SyntheticEvent | Event, reason?: string) => {
         if (reason === 'clickaway') return
-        setSnackBar({
-            open: false,
-            message,
-            severity
-        })
+        const reset = { open: false, message, severity }
+        setSnackBar(reset)
     }
 
     return (
@@ -51,4 +37,5 @@ const SnackBarStandard: React.FC<props> = ({
         </Snackbar>
     )
 }
-export default SnackBarStandard
+
+export { SnackBar }

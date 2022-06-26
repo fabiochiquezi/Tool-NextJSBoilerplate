@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react'
-import { SnackBar } from './SnackBars/Default'
 import { snackBarT, context } from './config'
+import { SnackBar } from 'components'
 
 const ComponentsProvider = ({ children }: { children: ReactNode }) => {
     const [snackBar, setSnackBar] = useState<snackBarT>({

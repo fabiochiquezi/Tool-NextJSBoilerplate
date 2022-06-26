@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-const StandardMenu: React.FC = () => {
+const Menu: React.FC = () => {
     const path = useRouter().pathname
     const URI = path.split('/')
     const route = URI[URI.length - 1]
@@ -31,4 +31,4 @@ const StandardMenu: React.FC = () => {
     )
 }
 
-export default StandardMenu
+export { Menu }

@@ -48,4 +48,4 @@ const ButtonSignOut: React.FC<ButtonSignOutT> = ({ className = '' }) => {
     )
 }
 
-export default ButtonSignOut
+export { ButtonSignOut }

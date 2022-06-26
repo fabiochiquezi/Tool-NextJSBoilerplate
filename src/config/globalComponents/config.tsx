@@ -1,5 +1,5 @@
 import { AlertColor } from '@mui/material'
-import React, { createContext, useContext } from 'react'
+import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 
 // ---------------------------------------------------------------- Component's status
 
@@ -13,7 +13,7 @@ export type snackBarT = {
 type types = {
     snackBar: {
         snackBar: snackBarT
-        setSnackBar: React.Dispatch<React.SetStateAction<snackBarT>>
+        setSnackBar: Dispatch<SetStateAction<snackBarT>>
     }
 }
 

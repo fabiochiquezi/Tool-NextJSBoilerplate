@@ -1,7 +1,7 @@
 import React from 'react'
-import { props } from './types'
+import { SimpleTodoListT } from './types'
 
-const SimpleTodoList: React.FC<props> = ({ list, Li }) => {
+const SimpleTodoList: React.FC<SimpleTodoListT> = ({ list, Li }) => {
     const isEmpty = list.length === 0
 
     const Empty = () => (
@@ -23,4 +23,4 @@ const SimpleTodoList: React.FC<props> = ({ list, Li }) => {
     return isEmpty ? <Empty /> : <List />
 }
 
-export default SimpleTodoList
+export { SimpleTodoList }

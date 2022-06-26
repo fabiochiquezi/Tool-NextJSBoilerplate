@@ -1,11 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import SimpleTodoAdd from '../../../app/SimpeToDo/add'
-import StandarStructure from '../../../components/Structure/Standard'
-import ButtonSignOut from '../../../app/Auth/SignOut'
-import StandardTitle from '../../../components/Titles/Standard'
-import StandardMenu from '../../../components/Structure/Menus/Standard'
+import { SimpleTodoAdd } from '../../../app/SimpeToDo/add'
+import { Structure } from '../../../components/Structure/Standard'
+import { ButtonSignOut } from '../../../app/Auth/SignOut'
+import { Title } from '../../../components/Titles/Default'
+import { Menu } from '../../../components/Structure/Menus/Default'
 
 const SimpleToDoAddPage: NextPage = () => {
     const title = 'Boilerplate | Home'
@@ -19,11 +19,11 @@ const SimpleToDoAddPage: NextPage = () => {
                 <link rel="icon" href="ico/favicon.ico" />
             </Head>
 
-            <StandarStructure ButtonSignOut={ButtonSignOut}>
-                <StandardTitle>Add a ToDo document</StandardTitle>
-                <StandardMenu />
+            <Structure ButtonSignOut={ButtonSignOut}>
+                <Title>Add a ToDo document</Title>
+                <Menu />
                 <SimpleTodoAdd />
-            </StandarStructure>
+            </Structure>
         </div>
     )
 }

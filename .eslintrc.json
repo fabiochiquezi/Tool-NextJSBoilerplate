@@ -69,10 +69,12 @@
         "no-var": "error",
         "object-shorthand": "off",
         "prefer-const": "error",
-        "prefer-template": "warn"
+        "prefer-template": "warn",
 
         //config problemss
         //"comma-dangle": ["error", "never"]
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off"
 
     }
 }

@@ -1,14 +1,9 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
 import { TextField } from '@mui/material'
-import { FieldValues, UseFormRegister } from 'react-hook-form'
+import { formFieldsT } from 'app/Shared/Types/general'
 
-type props = {
-    register: UseFormRegister<FieldValues>
-    errors: { [x: string]: any }
-}
-
-const FormFields: React.FC<props> = ({ errors, register }) => {
+const FormFields: React.FC<formFieldsT> = ({ errors, register }) => {
     return (
         <Grid container spacing={2}>
             <Grid item xs={12}>

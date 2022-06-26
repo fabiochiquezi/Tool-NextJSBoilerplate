@@ -1,18 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import { resErrorStd } from '../../../helpers'
-import ButtonSignOut from '../../../app/Auth/SignOut'
-import SimpleTodoList from '../../../app/SimpeToDo/list'
-import PrivateRoute from '../../../app/Auth/PrivateRoute'
-import StandardTitle from '../../../components/Titles/Standard'
+import { ButtonSignOut } from '../../../app/Auth/SignOut'
+import { SimpleTodoList } from '../../../app/SimpeToDo/list'
+import { Title } from '../../../components/Titles/Default'
 import { errorMessages } from '../../../app/Shared/Messages/error'
-import StandarStructure from '../../../components/Structure/Standard'
-import StandardMenu from '../../../components/Structure/Menus/Standard'
+import { Structure } from '../../../components/Structure/Standard'
+import { Menu } from '../../../components/Structure/Menus/Default'
 import type {
     NextPage,
     GetServerSideProps,
     InferGetServerSidePropsType as getType
 } from 'next'
+import { Li } from '../../../components/Lists/Default'
 
 const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
     const { ok, message } = data
@@ -31,11 +31,11 @@ const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
                 <link rel="icon" href="ico/favicon.ico" />
             </Head>
 
-            <StandarStructure ButtonSignOut={ButtonSignOut}>
-                <StandardTitle>My ToDo List</StandardTitle>
-                <StandardMenu />
-                {ok ? <SimpleTodoList list={data.data} /> : <Error />}
-            </StandarStructure>
+            <Structure ButtonSignOut={ButtonSignOut}>
+                <Title>My ToDo List</Title>
+                <Menu />
+                {ok ? <SimpleTodoList list={data.data} Li={Li} /> : <Error />}
+            </Structure>
         </div>
     )
 }

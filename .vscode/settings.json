@@ -34,7 +34,7 @@
         "jest.setup.ts": true,
 
         //Code
-        "src/pages/_document.js": true,
+        "src/pages/_document.page.js": true,
         //"src/globalStyle.css": true,
 
         // Mode firebase
