@@ -29,8 +29,10 @@
         "services/*": ["services/*"],
         "components/*": ["components/*"],
         "config/*": ["config/*"],
+
         "src/*": ["src/*"],
-        "functions/*": ["src/functions/*"]
+        "srcConfig/*": ["src/config/*"],
+        "srcComponents/*": ["src/components/*"]
     },
   },
   "include": [

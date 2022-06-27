@@ -1,10 +1,10 @@
 // Auth
-export * from './Auth/SignOut'
 export * from './Auth/SignIn'
 export * from './Auth//SignUp'
 
 // Shared
-export * from './Shared/Messages/error'
+export * from './Shared/config/messages/error'
+export * from './Shared/config/messages/success'
 
 // SimpleToDo
 export * from './SimpeToDo/add'

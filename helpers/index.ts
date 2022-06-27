@@ -1,3 +1,4 @@
 export * from './device'
 export * from './formatData'
-export * from './types/res'
+
+export * from './response/default'

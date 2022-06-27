@@ -1,20 +1,13 @@
-import { FC, ReactElement } from 'react'
-import schema from './schema'
+import { FC } from 'react'
+import { signInT } from './types'
 import Link from '@mui/material/Link'
 import FormFields from './FormFields'
+import { validation } from './validation'
 import { useForm } from 'react-hook-form'
 import Container from '@mui/material/Container'
-import { yupResolver } from '@hookform/resolvers/yup'
 import { Avatar, Typography } from '@mui/material'
 
-type props = {
-    onSubmit: (dataForm: any) => Promise<void>
-    loading: boolean
-    SubmitButton: FC
-}
-
-export const SignIn: FC<props> = ({ onSubmit, loading, SubmitButton }) => {
-    const validation = { resolver: yupResolver(schema) }
+const SignIn: FC<signInT> = ({ onSubmit, SubmitButton }) => {
     const formFns = useForm(validation)
 
     return (
@@ -47,3 +40,5 @@ export const SignIn: FC<props> = ({ onSubmit, loading, SubmitButton }) => {
         </Container>
     )
 }
+
+export { SignIn }

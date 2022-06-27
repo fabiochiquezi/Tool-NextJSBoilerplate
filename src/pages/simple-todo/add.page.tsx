@@ -1,10 +1,20 @@
-import React from 'react'
-import { HeadHTML } from '../Head'
+import React, { useState } from 'react'
+import { SimpleTodoAdd } from 'app'
 import type { NextPage } from 'next'
-import { SimpleTodoAdd, ButtonSignOut } from 'app'
-import { Structure, Title, Menu } from 'components'
+import { Structure, Title, Menu, SubmitButton } from 'components'
+import { ButtonSignOut, HeadHTML } from 'src/components'
 
 const SimpleToDoAddPage: NextPage = () => {
+    const [loading, setLoading] = useState(false)
+
+    const SubmitBtn = () => (
+        <SubmitButton
+            btnText="Sign In"
+            loading={loading}
+            className="mt-4 mb-8"
+        />
+    )
+
     return (
         <div>
             <HeadHTML title="My title" description="My description" />
@@ -12,7 +22,7 @@ const SimpleToDoAddPage: NextPage = () => {
             <Structure ButtonSignOut={ButtonSignOut}>
                 <Title>Add a ToDo document</Title>
                 <Menu />
-                <SimpleTodoAdd />
+                <SimpleTodoAdd SubmitButton={SubmitButton} />
             </Structure>
         </div>
     )

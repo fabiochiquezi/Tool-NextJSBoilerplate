@@ -59,6 +59,22 @@
             "title": "Doing",
             "tasks": [
                 {
+                    "text": "",
+                    "id": "cl4x6hdq4000a3p5xbm5xqo5b"
+                },
+                {
+                    "text": "adjust types on src",
+                    "id": "cl4x6ghyw000b3p5x6k8va6ok"
+                },
+                {
+                    "text": "adjust links",
+                    "id": "cl4x6gder000a3p5xoik4etwq"
+                },
+                {
+                    "text": "structure folder for firebase inside services",
+                    "id": "cl4wxt529000a3p5xausdjkfn"
+                },
+                {
                     "text": "stop on:\n- refactor auth\n- need an global state and send a log state to structure component",
                     "id": "cl4wcdfwc000a3p5x0obbbdzq"
                 },
@@ -100,5 +116,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1656310308729
+    "timestamp": 1656360856357
 }

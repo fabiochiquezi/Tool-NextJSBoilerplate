@@ -1,49 +1,41 @@
 import React from 'react'
-import Head from 'next/head'
-import { resErrorStd } from 'helpers'
-import { HomeT } from '../index.types'
-import { Title, Structure, Menu, Li } from 'components'
-import type { GetServerSideProps, NextPage } from 'next'
-import { ButtonSignOut, SimpleTodoList, errorMessages } from 'app'
+import axios from 'axios'
+import { pageT } from 'src/config'
+import { response } from 'helpers'
+import type { GetServerSideProps } from 'next'
+import { ButtonSignOut, HeadHTML } from 'src/components'
+import { Li, Structure, Error, Title } from 'components'
+import { simpleToDoDomainT, SimpleTodoList, errorMessages } from 'app'
 
-const Page: NextPage<HomeT> = ({ data }) => {
-    const { ok, message } = data
-
-    const Error = () => (
-        <div className="flex justify-center mt-24 text-center">
-            <p className="text-red-600">{message}</p>
-        </div>
-    )
+const Page: pageT<simpleToDoDomainT> = ({ data }) => {
+    const dataList = data.data as simpleToDoDomainT[]
+    const List = <SimpleTodoList list={dataList} Li={Li} />
+    const ErrorJX = <Error message={data.message} />
+    const View = () => (data.ok ? List : ErrorJX)
 
     return (
         <div>
-            <Head>
-                <title>Boilerplate | SimpleToDo List</title>
-                <meta name="description" content="Description" />
-                <link rel="icon" href="ico/favicon.ico" />
-            </Head>
+            <HeadHTML title="My title" description="My description" />
 
             <Structure ButtonSignOut={ButtonSignOut}>
-                <Title>My ToDo List</Title>
-                <Menu />
-                {ok ? <SimpleTodoList list={data.data} Li={Li} /> : <Error />}
+                <Title>All Simple ToDo</Title>
+                <View />
             </Structure>
         </div>
     )
 }
 
 export const getServerSideProps: GetServerSideProps = async context => {
-    const get = await fetch('http://localhost:5000/api/simple-todo')
-
-    if (get.status === 200) {
-        const data = await get.json()
-        const props = { data }
-        return { props }
+    try {
+        const url = process.env.NEXT_PUBLIC_BASE_API
+        const uri = `${url}/simple-todo`
+        const { data } = await axios.get(uri)
+        const successRes = response(true, data.message, data.data)
+        return { props: { data: successRes } }
+    } catch (error: any) {
+        const errorRes = response(false, errorMessages.getDefault, null)
+        return { props: { data: errorRes } }
     }
-
-    const errorRes = resErrorStd(errorMessages.getDefault, get.status)
-    const props = { data: errorRes }
-    return { props }
 }
 
 export default Page

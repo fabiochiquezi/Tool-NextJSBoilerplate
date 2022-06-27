@@ -1,8 +1,10 @@
+import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+
 // import YupPassword from 'yup-password'
 // YupPassword(yup)
 
-export default yup.object({
+const schema = yup.object({
     firstName: yup.string().required('* First Name is required'),
     lastName: yup.string().required('* Last Name is required'),
     email: yup
@@ -16,3 +18,5 @@ export default yup.object({
         .min(6, 'Must be at least 6 characters')
         .matches(/^(\S+$)/g, '* This field cannot contain only blankspaces')
 })
+
+export const validation = { resolver: yupResolver(schema) }

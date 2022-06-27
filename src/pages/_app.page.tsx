@@ -6,7 +6,7 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import { authState } from 'services'
 import type { AppProps } from 'next/app'
-import { authMiddlewre } from 'src/functions'
+import { authMiddlewre } from 'src/config'
 import { ComponentsProvider } from 'components'
 
 function MyApp({ Component, pageProps }: AppProps) {

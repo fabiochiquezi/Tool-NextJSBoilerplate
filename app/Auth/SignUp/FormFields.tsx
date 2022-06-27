@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
+import { formFieldsT } from 'app/Shared'
 import { TextField } from '@mui/material'
-import { formFieldsT } from 'app/Shared/Types/general'
 
 const FormFields: React.FC<formFieldsT> = ({ errors, register }) => {
     return (

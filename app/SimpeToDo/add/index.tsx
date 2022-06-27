@@ -1,25 +1,14 @@
-import schema from '../schema'
+import { FC } from 'react'
 import FormFields from '../FormFields'
-import React, { useState } from 'react'
+import { simpleToDoAddT } from './types'
 import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
-import SubmitButton from '../../../components/Buttons/Submit'
+import { validation } from '../validation'
 
-const SimpleTodoAdd = () => {
-    const formFns = useForm({ resolver: yupResolver(schema) })
-    const [loading, setLoading] = useState(false)
+const SimpleTodoAdd: FC<simpleToDoAddT> = ({ SubmitButton }) => {
+    const formFns = useForm(validation)
 
     const onSubmit = (data: any) => {
-        setLoading(true)
-
-        try {
-            setTimeout(() => {
-                console.log(data)
-                setLoading(false)
-            }, 2000)
-        } catch (e: any) {
-            setLoading(false)
-        }
+        console.log(data)
     }
 
     return (
@@ -32,7 +21,7 @@ const SimpleTodoAdd = () => {
                     errors={formFns.formState.errors}
                     register={formFns.register}
                 />
-                <SubmitButton btnText="Sign In" loading={loading} />
+                <SubmitButton />
             </form>
         </div>
     )
