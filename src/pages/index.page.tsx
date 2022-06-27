@@ -1,10 +1,11 @@
 import React from 'react'
 import axios from 'axios'
+import { HeadHTML } from './Head'
 import { HomeT } from './index.types'
 import { resErrorStd } from 'helpers'
 import type { NextPage, GetServerSideProps } from 'next'
+import { Li, Structure, Error, Title } from 'components'
 import { ButtonSignOut, SimpleTodoList, errorMessages } from 'app'
-import { Li, Structure, HeadHTML, Error, Title } from 'components'
 
 const Page: NextPage<HomeT> = ({ data }) => {
     const List = <SimpleTodoList list={data.data} Li={Li} />

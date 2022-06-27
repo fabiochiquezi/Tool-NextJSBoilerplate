@@ -16,4 +16,4 @@ const SubmitButton: FC<SubmitButtonT> = ({ btnText, loading, className }) => (
     </Button>
 )
 
-export default SubmitButton
+export { SubmitButton }

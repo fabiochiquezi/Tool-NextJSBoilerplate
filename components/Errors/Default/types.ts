@@ -1,3 +1,3 @@
-export type StandardMessageErrorT = {
+export type ErrorT = {
     message?: string
 }

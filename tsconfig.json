@@ -26,15 +26,17 @@
     "paths": {
         "app/*": ["app/*"],
         "helpers/*": ["helpers/*"],
-        "firebase/*": ["firebase/*"],
+        "services/*": ["services/*"],
         "components/*": ["components/*"],
-        "src/*": ["src/*"]
+        "config/*": ["config/*"],
+        "src/*": ["src/*"],
+        "functions/*": ["src/functions/*"]
     },
   },
   "include": [
       "next-env.d.ts",
-      "src/pages/_document.page.js",
 
+      "src/pages/_document.page.js",
       "src/**/*.ts",
       "src/**/*.tsx",
 
@@ -47,7 +49,7 @@
       "helpers/**/*.ts",
       "helpers/**/*.tsx",
 
-      "firebase/**/*.ts"
+      "services/**/*.ts"
   ],
   "exclude": ["node_modules", "helpers/tests/*"]
 }

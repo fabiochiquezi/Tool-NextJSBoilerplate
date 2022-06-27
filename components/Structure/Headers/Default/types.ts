@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-export type Header1T = {
+export type HeaderT = {
     ButtonSignOut: FC
-    log: boolean
+    logState: boolean
 }

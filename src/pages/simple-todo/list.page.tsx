@@ -1,20 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import { resErrorStd } from '../../../helpers'
-import { ButtonSignOut } from '../../../app/Auth/SignOut'
-import { SimpleTodoList } from '../../../app/SimpeToDo/list'
-import { Title } from '../../../components/Titles/Default'
-import { errorMessages } from '../../../app/Shared/Messages/error'
-import { Structure } from '../../../components/Structure/Standard'
-import { Menu } from '../../../components/Structure/Menus/Default'
-import type {
-    NextPage,
-    GetServerSideProps,
-    InferGetServerSidePropsType as getType
-} from 'next'
-import { Li } from '../../../components/Lists/Default'
+import { resErrorStd } from 'helpers'
+import { HomeT } from '../index.types'
+import { Title, Structure, Menu, Li } from 'components'
+import type { GetServerSideProps, NextPage } from 'next'
+import { ButtonSignOut, SimpleTodoList, errorMessages } from 'app'
 
-const Page: NextPage = ({ data }: getType<typeof getServerSideProps>) => {
+const Page: NextPage<HomeT> = ({ data }) => {
     const { ok, message } = data
 
     const Error = () => (

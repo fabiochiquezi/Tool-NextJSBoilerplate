@@ -1,5 +1,5 @@
 import { useComponents } from '../../../components/Context/config'
-import { goOut } from '../../../firebase/auth/signOut'
+import { goOut } from '../../../services/auth/signOut'
 import { ButtonSignOutT } from './types'
 import { useRouter } from 'next/router'
 import React from 'react'

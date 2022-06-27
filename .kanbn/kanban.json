@@ -59,6 +59,10 @@
             "title": "Doing",
             "tasks": [
                 {
+                    "text": "stop on:\n- refactor auth\n- need an global state and send a log state to structure component",
+                    "id": "cl4wcdfwc000a3p5x0obbbdzq"
+                },
+                {
                     "text": "implementing separation of dependencies from the first route '/' and private routes",
                     "id": "cl4q4lbx4000a3p5xr5hehoar"
                 },
@@ -96,5 +100,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1655934432581
+    "timestamp": 1656310308729
 }

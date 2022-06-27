@@ -1,13 +1,14 @@
-// Avatar
-export * from './Avatar/Default'
+// Context
+export * from './Context/index'
+export * from './Context/config'
 
 // Buttons
 export * from './Buttons/Submit'
 
-// Context
-export * from './Context/'
-export * from './Context/SnackBars/Alert'
-export * from './Context/SnackBars/Default'
+// SnackBars
+export * from './SnackBars/Alert'
+export * from './SnackBars/Default'
+export * from './SnackBars/Default/types'
 
 // Errors
 export * from './Errors/Default'
@@ -16,8 +17,7 @@ export * from './Errors/Default'
 export * from './Lists/Default'
 
 // Structure
-export * from './Structure/Standard'
-export * from './Structure/HeadHTML/Default'
+export * from './Structure/Default'
 export * from './Structure/Headers/Default'
 export * from './Structure/Menus/Default'
 

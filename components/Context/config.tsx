@@ -1,19 +1,10 @@
-import { AlertColor } from '@mui/material'
-import React, { createContext, useContext } from 'react'
+import { snackBarStateT } from 'components'
+import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 
-// ---------------------------------------------------------------- Component's status
-
-export type snackBarT = {
-    open: boolean
-    message: string
-    severity: AlertColor | undefined
-}
-
-// ---------------------------------------------------------------- Context types and default values
 type types = {
     snackBar: {
-        snackBar: snackBarT
-        setSnackBar: React.Dispatch<React.SetStateAction<snackBarT>>
+        snackBar: snackBarStateT
+        setSnackBar: Dispatch<SetStateAction<snackBarStateT>>
     }
 }
 

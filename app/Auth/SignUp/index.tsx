@@ -7,13 +7,13 @@ import Avatar from '@mui/material/Avatar'
 import { useForm } from 'react-hook-form'
 import Container from '@mui/material/Container'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { signIn } from '../../../firebase/auth/signIn'
-import { signUp } from '../../../firebase/auth/signUp'
+import { signIn } from '../../../services/auth/signIn'
+import { signUp } from '../../../services/auth/signUp'
 import SubmitButton from '../../../components/Buttons/Submit'
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 import { useComponents } from '../../../components/Context/config'
 
-export default function SignUp() {
+export function SignUp() {
     const [loading, setLoading] = React.useState(false)
     const validation = { resolver: yupResolver(schema) }
     const { snackBar } = useComponents()

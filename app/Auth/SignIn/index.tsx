@@ -1,49 +1,21 @@
+import { FC, ReactElement } from 'react'
 import schema from './schema'
-import * as React from 'react'
 import Link from '@mui/material/Link'
 import FormFields from './FormFields'
-import Grid from '@mui/material/Grid'
-import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import Container from '@mui/material/Container'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { signIn } from '../../../firebase/auth/signIn'
-import SubmitButton from '../../../components/Buttons/Submit'
-import { useComponents } from '../../../components/Context/config'
+import { Avatar, Typography } from '@mui/material'
 
 type props = {
-    Avatar: React.FC
+    onSubmit: (dataForm: any) => Promise<void>
+    loading: boolean
+    SubmitButton: FC
 }
 
-export const SignIn: React.FC<props> = ({ Avatar }) => {
-    const [loading, setLoading] = React.useState(false)
+export const SignIn: FC<props> = ({ onSubmit, loading, SubmitButton }) => {
     const validation = { resolver: yupResolver(schema) }
     const formFns = useForm(validation)
-    const router = useRouter()
-    const { snackBar } = useComponents()
-
-    const onSubmit = async (dataForm: any) => {
-        setLoading(true)
-        const { message, ok } = await signIn(dataForm)
-
-        if (ok) {
-            snackBar.setSnackBar({
-                open: true,
-                message,
-                severity: 'success'
-            })
-            router.push('/simple-todo/list')
-            return
-        }
-
-        snackBar.setSnackBar({
-            open: true,
-            message,
-            severity: 'error'
-        })
-
-        setLoading(false)
-    }
 
     return (
         <Container
@@ -51,7 +23,11 @@ export const SignIn: React.FC<props> = ({ Avatar }) => {
             maxWidth="xs"
             className="mt-16 flex flex-col items-center"
         >
-            <Avatar />
+            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }} />
+
+            <Typography component="h1" variant="h5" className="mb-4">
+                Sign in
+            </Typography>
 
             <form
                 onSubmit={formFns.handleSubmit(onSubmit)}
@@ -62,11 +38,7 @@ export const SignIn: React.FC<props> = ({ Avatar }) => {
                     register={formFns.register}
                 />
 
-                <SubmitButton
-                    btnText="Sign In"
-                    loading={loading}
-                    className="mt-4 mb-8"
-                />
+                <SubmitButton />
 
                 <Link href="#" variant="body2">
                     {'Dont have an account? Sign Up'}

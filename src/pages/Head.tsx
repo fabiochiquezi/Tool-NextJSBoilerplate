@@ -1,6 +1,11 @@
-import { HeadHTMLT } from './types'
 import React, { FC } from 'react'
 import Head from 'next/head'
+
+type HeadHTMLT = {
+    title: string
+    description: string
+    favicon?: string
+}
 
 const HeadHTML: FC<HeadHTMLT> = ({
     title,
