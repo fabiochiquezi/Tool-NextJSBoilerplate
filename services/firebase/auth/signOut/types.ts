@@ -1,4 +1,4 @@
-import { resFirebase, resFirebaseFnT } from '../../helpers/res/types'
+import { resFirebase, resFirebaseFnT } from '../../../helpers/res/types'
 import { Auth } from 'firebase/auth'
 
 type firebaseSignOut = (auth: Auth) => Promise<void>

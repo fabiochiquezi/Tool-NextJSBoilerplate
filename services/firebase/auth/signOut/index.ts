@@ -1,6 +1,6 @@
 import { successMessage } from '../successMessages'
 import { getError } from '../errMessages'
-import { resp } from '../../helpers/res'
+import { resp } from '../../../helpers/res'
 import { signOut } from 'firebase/auth'
 import { auth } from '../../config'
 import { signOutT } from './types'

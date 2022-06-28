@@ -1,5 +1,5 @@
 import { Auth, UserCredential } from 'firebase/auth'
-import { resFirebase, resFirebaseFnT } from '../../helpers/res/types'
+import { resFirebase, resFirebaseFnT } from '../../../helpers/res/types'
 
 type firebaseSignIn = (
     auth: Auth,

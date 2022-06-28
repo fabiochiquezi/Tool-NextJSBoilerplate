@@ -1,7 +1,7 @@
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { successMessage } from '../successMessages'
 import { getError } from '../errMessages'
-import { resp } from '../../helpers/res'
+import { resp } from '../../../helpers/res'
 import { auth } from '../../config'
 import { signInT } from './types'
 

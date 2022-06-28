@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword as fireSignUp } from 'firebase/auth'
 import { successMessage } from '../successMessages'
-import { resp } from '../../helpers/res'
+import { resp } from '../../../helpers/res'
 import { getError } from '../errMessages'
 import { auth } from '../../config'
 import { signUpT } from './types'

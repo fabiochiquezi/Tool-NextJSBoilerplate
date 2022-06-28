@@ -1,20 +1,21 @@
-[debug] [2022-06-28T02:45:05.788Z] ----------------------------------------------------------------------
-[debug] [2022-06-28T02:45:05.790Z] Command:       /home/fabiochiquezi/.nvm/versions/node/v16.15.0/bin/node /home/fabiochiquezi/.nvm/versions/node/v16.15.0/bin/firebase emulators:start
-[debug] [2022-06-28T02:45:05.790Z] CLI Version:   11.1.0
-[debug] [2022-06-28T02:45:05.790Z] Platform:      linux
-[debug] [2022-06-28T02:45:05.790Z] Node Version:  v16.15.0
-[debug] [2022-06-28T02:45:05.800Z] Time:          Mon Jun 27 2022 23:45:05 GMT-0300 (Brasilia Standard Time)
-[debug] [2022-06-28T02:45:05.800Z] ----------------------------------------------------------------------
+[debug] [2022-06-28T04:51:35.515Z] ----------------------------------------------------------------------
+[debug] [2022-06-28T04:51:35.524Z] Command:       /home/fabiochiquezi/.nvm/versions/node/v16.15.0/bin/node /home/fabiochiquezi/.nvm/versions/node/v16.15.0/bin/firebase emulators:start
+[debug] [2022-06-28T04:51:35.526Z] CLI Version:   11.1.0
+[debug] [2022-06-28T04:51:35.526Z] Platform:      linux
+[debug] [2022-06-28T04:51:35.527Z] Node Version:  v16.15.0
+[debug] [2022-06-28T04:51:35.533Z] Time:          Tue Jun 28 2022 01:51:35 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-06-28T04:51:35.534Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-06-28T02:45:05.863Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-06-28T02:45:05.863Z] > authorizing via signed-in user (fabiochiquezi@gmail.com)
+[debug] [2022-06-28T04:51:35.541Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-06-28T04:51:35.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-28T04:51:35.632Z] > authorizing via signed-in user (fabiochiquezi@gmail.com)
 [info] i  emulators: Starting emulators: auth {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth"}}
-[debug] [2022-06-28T02:45:05.934Z] [hub] writing locator at /tmp/hub-toolnextjsboilerplate.json
-[debug] [2022-06-28T02:45:12.808Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-06-28T02:45:12.808Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-06-28T02:45:12.808Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/home/fabiochiquezi/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/home/fabiochiquezi/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-06-28T04:51:35.654Z] [hub] writing locator at /tmp/hub-toolnextjsboilerplate.json
+[debug] [2022-06-28T04:51:43.568Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-28T04:51:43.568Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-28T04:51:43.568Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/home/fabiochiquezi/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/home/fabiochiquezi/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-06-28T02:45:12.972Z] Web / API server started at localhost:4040
+[debug] [2022-06-28T04:51:43.689Z] Web / API server started at localhost:4040
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4040\n"}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
@@ -32,10 +33,5 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[warn] ⚠  Error: Internal state invariant broken: no user with ID: 3N6Sjp1qY4cGGXWlYFho59UFCo3U
-    at AgentProjectState.getUserByLocalIdAssertingExists (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/state.js:208:19)
-    at AgentProjectState.validateRefreshToken (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/state.js:295:24)
-    at grantToken (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/operations.js:1199:38)
-    at Proxy.<anonymous> (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/server.js:375:20)
-    at /home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/node_modules/promise-breaker/index.js:265:46
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: 3N6Sjp1qY4cGGXWlYFho59UFCo3U\n    at AgentProjectState.getUserByLocalIdAssertingExists (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/state.js:208:19)\n    at AgentProjectState.validateRefreshToken (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/state.js:295:24)\n    at grantToken (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/operations.js:1199:38)\n    at Proxy.<anonymous> (/home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/lib/emulator/auth/server.js:375:20)\n    at /home/fabiochiquezi/.nvm/versions/node/v16.15.0/lib/node_modules/firebase-tools/node_modules/promise-breaker/index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-06-28T04:51:44.311Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-06-28T04:51:44.312Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
