@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { pageT } from 'src/config'
+import { pageT } from 'types'
 import { response } from 'helpers'
 import type { GetServerSideProps } from 'next'
 import { ButtonSignOut, HeadHTML } from 'src/components'

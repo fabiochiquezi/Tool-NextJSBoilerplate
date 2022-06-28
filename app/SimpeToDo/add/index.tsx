@@ -1,11 +1,12 @@
 import { FC } from 'react'
-import FormFields from '../FormFields'
 import { simpleToDoAddT } from './types'
 import { useForm } from 'react-hook-form'
 import { validation } from '../validation'
 
-const SimpleTodoAdd: FC<simpleToDoAddT> = ({ SubmitButton }) => {
+const SimpleTodoAdd: FC<simpleToDoAddT> = ({ SubmitButton, Input }) => {
     const formFns = useForm(validation)
+    const errors = formFns.formState.errors
+    const register = formFns.register
 
     const onSubmit = (data: any) => {
         console.log(data)
@@ -17,9 +18,11 @@ const SimpleTodoAdd: FC<simpleToDoAddT> = ({ SubmitButton }) => {
                 onSubmit={formFns.handleSubmit(onSubmit)}
                 className="flex flex-col items-center"
             >
-                <FormFields
-                    errors={formFns.formState.errors}
-                    register={formFns.register}
+                <Input
+                    label="Content"
+                    register={register('content')}
+                    errors={!!errors.content}
+                    helperText={errors.content && errors.email.content}
                 />
                 <SubmitButton />
             </form>

@@ -1,3 +1,6 @@
+// AvatarDefault
+export * from './Avatar/Default'
+
 // Context
 export * from './Context/index'
 export * from './Context/config'
@@ -12,6 +15,10 @@ export * from './SnackBars/Default/types'
 
 // Errors
 export * from './Errors/Default'
+
+// Inputs
+export * from './Inputs/Default'
+export * from './Inputs/Default/types'
 
 // Lists
 export * from './Lists/Default'

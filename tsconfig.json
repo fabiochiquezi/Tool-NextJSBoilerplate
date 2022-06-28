@@ -29,6 +29,7 @@
         "services/*": ["services/*"],
         "components/*": ["components/*"],
         "config/*": ["config/*"],
+        "types/*": ["types/*"],
 
         "src/*": ["src/*"],
         "srcConfig/*": ["src/config/*"],

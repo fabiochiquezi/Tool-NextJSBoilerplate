@@ -1,7 +1,7 @@
-import React from 'react'
+import { FC } from 'react'
 import { SimpleTodoListT } from './types'
 
-const SimpleTodoList: React.FC<SimpleTodoListT> = ({ list, Li }) => {
+const SimpleTodoList: FC<SimpleTodoListT> = ({ list, Li }) => {
     const isEmpty = list.length === 0
 
     const Empty = () => (

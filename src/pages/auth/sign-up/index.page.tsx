@@ -1,9 +1,11 @@
 import { SignUp } from 'app'
+import Link from 'next/link'
 import { useState } from 'react'
 import type { NextPage } from 'next'
+import { Grid } from '@mui/material'
 import { onSubmitFn } from './onSubmitFn'
 import { HeadHTML } from 'src/components'
-import { SubmitButton, useComponents } from 'components'
+import { AvatarDefault, Input, SubmitButton, useComponents } from 'components'
 
 const AuthSignUp: NextPage = () => {
     const { snackBar } = useComponents()
@@ -23,7 +25,22 @@ const AuthSignUp: NextPage = () => {
             <HeadHTML title="My title" description="My description" />
 
             <main>
-                <SignUp onSubmit={onSubmit} SubmitButton={SubmitBtn} />
+                <SignUp
+                    onSubmit={onSubmit}
+                    SubmitButton={SubmitBtn}
+                    Avatar={AvatarDefault}
+                    Input={Input}
+                />
+
+                <Grid container justifyContent="center" className="mt-4">
+                    <Grid item>
+                        <Link href="/auth/sign-in">
+                            <a className="text-blue-600">
+                                Already have an account? Sign in
+                            </a>
+                        </Link>
+                    </Grid>
+                </Grid>
             </main>
         </div>
     )

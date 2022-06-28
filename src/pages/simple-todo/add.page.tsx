@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
 import { SimpleTodoAdd } from 'app'
 import type { NextPage } from 'next'
-import { Structure, Title, Menu, SubmitButton } from 'components'
+import React, { useState } from 'react'
 import { ButtonSignOut, HeadHTML } from 'src/components'
+import { Structure, Title, Menu, SubmitButton, Input } from 'components'
 
 const SimpleToDoAddPage: NextPage = () => {
     const [loading, setLoading] = useState(false)
@@ -22,7 +22,7 @@ const SimpleToDoAddPage: NextPage = () => {
             <Structure ButtonSignOut={ButtonSignOut}>
                 <Title>Add a ToDo document</Title>
                 <Menu />
-                <SimpleTodoAdd SubmitButton={SubmitButton} />
+                <SimpleTodoAdd SubmitButton={SubmitBtn} Input={Input} />
             </Structure>
         </div>
     )
