@@ -1,6 +1,6 @@
 // Auth
 export * from './Auth/SignIn'
-export * from './Auth//SignUp'
+export * from './Auth/SignUp'
 
 // Shared
 export * from './Shared/config/messages/error'

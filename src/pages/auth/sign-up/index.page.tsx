@@ -1,11 +1,16 @@
-import { SignUp } from 'app'
 import Link from 'next/link'
 import { useState } from 'react'
 import type { NextPage } from 'next'
 import { Grid } from '@mui/material'
+import { SignUp } from 'elements/app'
 import { onSubmitFn } from './onSubmitFn'
 import { HeadHTML } from 'src/components'
-import { AvatarDefault, Input, SubmitButton, useComponents } from 'components'
+import {
+    AvatarDefault,
+    Input,
+    SubmitButton,
+    useComponents
+} from 'elements/components'
 
 const AuthSignUp: NextPage = () => {
     const { snackBar } = useComponents()

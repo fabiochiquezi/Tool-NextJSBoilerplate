@@ -1,10 +1,15 @@
-import { SignIn } from 'app'
 import Link from 'next/link'
 import { useState } from 'react'
 import type { NextPage } from 'next'
+import { SignIn } from 'elements/app'
 import { HeadHTML } from 'src/components'
 import { onSubmitFn } from './onSubmitFn'
-import { SubmitButton, useComponents, AvatarDefault, Input } from 'components'
+import {
+    SubmitButton,
+    useComponents,
+    AvatarDefault,
+    Input
+} from 'elements/components'
 
 const AuthSignIn: NextPage = () => {
     const { snackBar } = useComponents()

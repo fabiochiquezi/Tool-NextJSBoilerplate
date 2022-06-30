@@ -1,4 +1,4 @@
-import { RouteAuth, routes } from 'config'
+import { RouteAuth, routes } from 'general/config'
 import { User } from 'firebase/auth'
 import Router from 'next/router'
 

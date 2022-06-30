@@ -1,4 +1,4 @@
-import { snackBarStateT } from 'components'
+import { snackBarStateT } from 'elements/components'
 import { Dispatch, SetStateAction } from 'react'
 
 export type onSubmitFnT = (

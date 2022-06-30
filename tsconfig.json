@@ -24,12 +24,12 @@
     "noImplicitReturns": true,
     "baseUrl": ".",
     "paths": {
-        "app/*": ["app/*"],
-        "helpers/*": ["helpers/*"],
+        "app/*": ["elements/app/*"],
+        "components/*": ["elements/components/*"],
+        "types/*": ["elements/types/*"],
+        "helpers/*": ["general/helpers/*"],
+        "config/*": ["general/config/*"],
         "services/*": ["services/*"],
-        "components/*": ["components/*"],
-        "config/*": ["config/*"],
-        "types/*": ["types/*"],
 
         "src/*": ["src/*"],
         "srcConfig/*": ["src/config/*"],
@@ -43,14 +43,11 @@
       "src/**/*.ts",
       "src/**/*.tsx",
 
-      "app/**/*.ts",
-      "app/**/*.tsx",
+      "elements/**/*.ts",
+      "elements/**/*.tsx",
 
-      "components/**/*.ts",
-      "components/**/*.tsx",
-
-      "helpers/**/*.ts",
-      "helpers/**/*.tsx",
+      "general/**/*.ts",
+      "general/**/*.tsx",
 
       "services/**/*.ts"
   ],

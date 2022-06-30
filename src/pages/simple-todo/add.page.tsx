@@ -1,8 +1,14 @@
-import { SimpleTodoAdd } from 'app'
 import type { NextPage } from 'next'
 import React, { useState } from 'react'
+import { SimpleTodoAdd } from 'elements/app'
 import { ButtonSignOut, HeadHTML } from 'src/components'
-import { Structure, Title, Menu, SubmitButton, Input } from 'components'
+import {
+    Structure,
+    Title,
+    Menu,
+    SubmitButton,
+    Input
+} from 'elements/components'
 
 const SimpleToDoAddPage: NextPage = () => {
     const [loading, setLoading] = useState(false)

@@ -1,4 +1,4 @@
-import { useComponents } from 'components'
+import { useComponents } from 'elements/components'
 import { ButtonSignOutT } from './types'
 import { useRouter } from 'next/router'
 import { goOut } from 'services'

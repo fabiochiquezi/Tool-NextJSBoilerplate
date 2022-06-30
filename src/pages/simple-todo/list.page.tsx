@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios'
-import { pageT } from 'types'
-import { response } from 'helpers'
+import { pageT } from 'elements/types'
+import { response } from 'general/helpers'
 import type { GetServerSideProps } from 'next'
 import { ButtonSignOut, HeadHTML } from 'src/components'
-import { Li, Structure, Error, Title } from 'components'
-import { simpleToDoDomainT, SimpleTodoList, errorMessages } from 'app'
+import { Li, Structure, Error, Title } from 'elements/components'
+import { simpleToDoDomainT, SimpleTodoList, errorMessages } from 'elements/app'
 
 const Page: pageT<simpleToDoDomainT> = ({ data }) => {
     const dataList = data.data as simpleToDoDomainT[]
